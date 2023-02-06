@@ -10,7 +10,7 @@ import { BuilderComponent, builder, useIsPreviewing, Builder } from '@builder.io
 */
 builder.init('97e34d7084ab4784b0fcf7da897eb5a7');
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params } : {params:any}) {
   /*
     Fetch the first page from Builder that matches the current URL.
     The `userAttributes` field is used for targeting content,
