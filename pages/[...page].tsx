@@ -50,7 +50,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Page({ page }) {
+export default function Page({ page } : {page:any}) {
   const router = useRouter();
   /*
     This flag indicates if you are viewing the page in the Builder editor.
