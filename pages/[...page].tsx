@@ -91,7 +91,7 @@ export default function Page({ page } : {page:any}) {
   You would typically do this in the file where the component is defined.
 */
 
-const MyCustomComponent = props => (
+const MyCustomComponent = ({props } : { props:any })  => (
   <div>
     <h1>{props.title}</h1>
     <p>{props.description}</p>
